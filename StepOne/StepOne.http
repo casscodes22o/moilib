@@ -1,0 +1,41 @@
+@rootUrl = http://localhost:5096
+
+GET {{rootUrl}}/weatherforecast/
+Accept: application/json
+
+###
+GET {{rootUrl}}/api/books
+Accept: application/json 
+
+###
+GET {{rootUrl}}/api/books/2
+Accept: application/json
+
+###
+# note sure here, added that enum as a string "BNEW"
+# dunno if its parsed properly as an enum
+# aight sent this multiple times 'di sya map lol 
+POST {{rootUrl}}/api/books
+Content-Type: application/json
+{
+  "id": 5,
+  "title": "Call Me By Your Nickname",
+  "author": "Andre Aciman",
+  "purchase": "BNEW"
+}
+
+###
+PUT {{rootUrl}}/api/books/5
+Content-Type: application/json
+{
+  "id": 5,
+  "title": "SomeBok",
+  "author": "Andre Aciman",
+  "purchase": "BNEW"
+}
+
+###
+DELETE {{rootUrl}}/api/books/1
+Accept: application/json
+
+# !IMPORTANT REFRESH/REBUILD WHENEVR U MAKE NEW REQUESTS
