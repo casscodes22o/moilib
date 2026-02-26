@@ -8,30 +8,34 @@ GET {{rootUrl}}/api/books
 Accept: application/json 
 
 ###
-GET {{rootUrl}}/api/books/2
+GET {{rootUrl}}/api/books/3
 Accept: application/json
 
 ###
 # note sure here, added that enum as a string "BNEW"
 # dunno if its parsed properly as an enum
 # aight sent this multiple times 'di sya map lol 
+# ASSJAKJS apparently when i connected this to the DB 
+# naka autoincrement na si ID loollllllll
+# DONT PUT HASHTAG INBETWEEN 
+
 POST {{rootUrl}}/api/books
 Content-Type: application/json
 {
-  "id": 5,
-  "title": "Call Me By Your Nickname",
-  "author": "Andre Aciman",
+  "title": "Find MEEE",
+  "author": "Andret Aciman",
   "purchase": "BNEW"
 }
 
 ###
-PUT {{rootUrl}}/api/books/5
+# walang kwenta yung id update here, should remove it
+# liability pa if the id is updated, conflict 
+PUT {{rootUrl}}/api/books/1
 Content-Type: application/json
 {
-  "id": 5,
-  "title": "SomeBok",
-  "author": "Andre Aciman",
-  "purchase": "BNEW"
+  "title": "Le Grand Meaulnes",
+  "author": "Alain Henri",
+  "purchase": "PSHOP"
 }
 
 ###
