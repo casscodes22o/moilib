@@ -87,6 +87,7 @@ namespace StepOne.Controllers
             // always return Ok() when req is succesful 
             // I dont want to tackle other data structs in C# yet 
             // easy dupe id fix is check if already exists then send bad request 
+            // la lang lol
         }
 
         //PUT
